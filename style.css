@@ -44,36 +44,115 @@ header nav ul {
   display: flex;
   gap: 12px;
 }
-.search-bar{
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    color: #0a111e;
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #0a111e;
 }
 
-.search-bar input{
-    background-color: transparent;
-    border: none;
-    width: 95%;
-    color: white;
-    padding: 8px;
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  width: 95%;
+  color: white;
+  padding: 8px;
 }
-.search-bar input::placeholder{
-    color: #d1d1d1;
+.search-bar input::placeholder {
+  color: #d1d1d1;
 }
-.search-bar .search-icon{
-    color: #a0aec0;
-    padding: 5px;
+.search-bar .search-icon {
+  color: #a0aec0;
+  padding: 5px;
 }
 
 /* Vamos deixar os artigos bunitin agr ;) */
-.articles{
-    display: flex;
-    padding: 40px 120px;
-    gap: 40px;
-    flex-wrap: wrap;
+.articles {
+  display: flex;
+  padding: 40px 120px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.article-card {
+  background-color: #f4f5f7; /* cor do fundo da noticia */
+  color: #0a111e; /* cor do texto da noticia */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  font-weight: 200;
+}
+.article-title {
+  font-weight: 900;
+}
+.article-content {
+  line-height: 1.4;
+}
+.like-button {
+  /* pode ser que o seu seja likebutton tudo junto */
+  background: none;
+  border: none;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  /* todos os estilos contidos aqui só vão funcionar em telas até 768px */
+  body {
+    background-color: aquamarine;
+  }
+  .article-header{
+    font-size:0.8em ;
+  }
+  header, .articles{
+    padding: 40px;
+  }
+}
+
+/* Notícia */
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #a0aec0;
+}
+article{
+  background-color: #f4f5f7; /* cor de fundo da noticia */
+  padding: 24px; /* espaçamento */
+  border-radius: 20px; /* borda arredondada */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* sombra da caixa */
+  display: flex; /* centraliza a caixa */
+  flex-direction: column; /* mantem o texto e img um abaixo do outro */
+  justify-content: center; /* centraliza a caixa */
+  align-items: center; /* centraliza a caixa */
+  width: 60%; /* largura da noticia */
+  color: #0a111e; /* cor do texto da noticia */
+}
+h2{
+  font-size: 2em; /* tamanho da fonte do titulo da noticia */
+  font-weight: 900; /* largura da fonte do titulo da noticia */
+}
+
+.news-highlight{
+  font-size: 1.5em; /* aumenta a fonte 1.5x do que o pai*/
+  text-align: center; /* centraliza o texto */
+  font-style: oblique; /* deixa o texto em italico */  
+}
+.news-body{
+  line-height: 1.5; /* espaçamento entre linhas */
+  text-indent: 24px; /* paragrafo, espaço na primeira linha do paragrafo */
+}
+img{
+  width: 100%;
+  padding: 16px;
 }
