@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog SENAI"</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>SENAI</h1>
+        <nav>
+          <ul>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">Quem somos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquise aqui a sua notícia..." />
+        <span class="search-icon">🔍</span>
+      </div>
+    </header>
+    <!-- aqui começa a seção principal do nosso site -->
+    <main>
+      <!-- aqui ficarão todos os cards de noticias -->
+      <section class="articles">
+        <!-- aqui é um card de noticia -->
+        <article class="article-card">
+          <div class="article-header">
+            <span class="date">19 de ago, 2025</span>
+            <button class="likebutton">♥️</button>
+          </div>
+          <a href="noticia.html">
+            <h2 class="article-title">Parabéns Flauzino! 🎈🍰</h2>
+          </a>
+          <p class="article-content">
+            Hoje é um dia especial, porque é seu aniversário... blabla... Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Vero nulla ad
+            mollitia et necessitatibus, dicta consequuntur odio? Placeat a
+            quibusdam officiis cumque doloremque consequatur esse minus
+            consectetur. Nemo perferendis obcaecati harum, dolor odio aliquam!
+            Eos suscipit possimus tempora ipsum provident obcaecati quaerat
+            molestiae ea voluptatum non quod vero, itaque recusandae!
+          </p>
+        </article>
+        <!-- aqui acaba o card da noticia -->
+        <article class="article-card">
+          <div class="article-header">
+            <span class="date">02 de jul, 2021</span>
+            <button class="like-button">❤️</button>
+          </div>
+          <a href="noticia.html">
+            <h2 class="article-title">
+              Tim Berners-Lee vai leiloar código-fonte da web
+            </h2>
+            <p class="article-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
+              lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
+              Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis
+              leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus
+              a lectus et, interdum ullamcorper libero.
+            </p>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <div class="article-header">
+            <span class="date">02 de jul, 2021</span>
+            <button class="like-button">❤️</button>
+          </div>
+          <a href="noticia.html">
+            <h2 class="article-title">
+              Tem Firefox novo no pedaço e você vai querer migrar
+            </h2>
+            <p class="article-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vestibulum auctor est. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Inventore accusamus autem alias,
+              neque perspiciatis cum non sunt eum necessitatibus dolore!
+            </p>
+          </a>
+        </article>
+        <article class="article-card">
+          <div class="article-header">
+            <span class="date">02 de jul, 2021</span>
+            <button class="like-button">❤️</button>
+          </div>
+          <a href="noticia.html">
+            <h2 class="article-title">
+              John McAfee, criador do antivírus McAfee, morre
+            </h2>
+            <p class="article-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vestibulum auctor est. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Ipsum voluptatem animi, consequuntur
+              deleniti dignissimos quidem. Error deserunt, minus ea cupiditate
+              veniam cum harum ab. Magni commodi quaerat amet sequi inventore?
+            </p>
+          </a>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
